@@ -1,0 +1,24 @@
+<div class="container">
+    <form class="form-horizontal" (submit)="fetchAmount()">
+      <fieldset>
+        <legend>Bank Atm Application</legend>
+        <div class="form-group">
+
+          <label for="inputCard" class="col-lg-2 control-label">Enter Valid Withdraval Amount</label>
+          <div class="col-lg-10">
+            <input type="number" placeholder="Multiple of 100" step="100" min="100" class="form-control" id="inputCard" [(ngModel)]="amount" name="amount" required>
+          </div>
+        </div>
+  
+       
+  
+        <div class="form-group">
+          <div class="col-lg-10 col-lg-offset-2">
+            <button type="reset" class="btn btn-default">Cancel</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+
+      </fieldset>
+    </form>  
+  </div>
